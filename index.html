@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-				<title>Loading...</title>
+  <title>Loading...</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/openplayerjs@latest/dist/openplayer.min.css">
 </head>
 <body>
-				<ol>
-								<li><a href="/videos/1.mp4">krlmntnmssg</a></li>
-				</ol>
+<video class="op-player__media" id="player" controls playsinline>
+            <source src="https://www.dropbox.com/s/86er7xpywi0r0ra/lndrmt.mp4?raw=1" type="video/mp4">
+        </video>
+        <script src="https://cdn.jsdelivr.net/npm/openplayerjs@latest/dist/openplayer.min.js"></script>
+  <script>
+            // Check the `API and events` link below for more options
+            const player = new OpenPlayerJS('player');
+            player.init();
+  </script>
+  <ol>
+    <li><a href="https://www.dropbox.com/s/86er7xpywi0r0ra/lndrmt.mp4?raw=1">krlmntnmssg</a></li>
+  </ol>
 </body>
 </html>
