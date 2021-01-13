@@ -16,7 +16,7 @@
                     "https://www.dropbox.com/s/m532xyyzxpv4ymx/krlmntngnclgst.mp4?raw=1",
                     "https://www.dropbox.com/s/nz8nwzicvb5amfv/krlmntnmssr.mp4?raw=1",
                    "https://www.dropbox.com/s/wb5qzw59ccplnyu/mlbntlwq.mp4?raw=1"];
-            i = urlParams.has(n) ? urlParams.get(n) : 0;
+            i = urlParams.has("n") ? urlParams.get("n") : Math.floor(Math.random() * vids.length);
             const player = new OpenPlayerJS('player');
             player.init();
             player.src = vids[i]
