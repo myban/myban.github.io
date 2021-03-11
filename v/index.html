@@ -33,7 +33,7 @@
                    "https://www.dropbox.com/s/uoyd2ft01ghg6oe/fkdrvnscl5.mp4?raw=1",
                    "https://www.dropbox.com/s/6ya0spiegjudg6x/f89e110dbfdf3.mp4?raw=1"];
             i = urlParams.has("n") ? urlParams.get("n") : Math.floor(Math.random() * vids.length);
-            const player = new OpenPlayerJS('player', {startVolume:0, width:100%, height:100%, mode:´fit´});
+            const player = new OpenPlayerJS('player', {startVolume: 0, width: 100%, height: 100%, mode: ´fit´});
             player.init();
             player.src = vids[i]
   </script>
