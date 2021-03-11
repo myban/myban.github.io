@@ -3,6 +3,11 @@
 <head>
   <title>Loading...</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/openplayerjs@latest/dist/openplayer.min.css">
+  <style>
+    body: {
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
   <div>
@@ -26,7 +31,7 @@
                    "https://www.dropbox.com/s/uoyd2ft01ghg6oe/fkdrvnscl5.mp4?raw=1",
                    "https://www.dropbox.com/s/6ya0spiegjudg6x/f89e110dbfdf3.mp4?raw=1"];
             i = urlParams.has("n") ? urlParams.get("n") : Math.floor(Math.random() * vids.length);
-            const player = new OpenPlayerJS('player');
+            const player = new OpenPlayerJS('player', {startVolume: 0});
             player.init();
             player.src = vids[i]
   </script>
