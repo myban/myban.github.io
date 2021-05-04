@@ -1,4 +1,4 @@
-const vids = ["https://www.dropbox.com/s/86er7xpywi0r0ra/lndrmt.mp4?raw=1",
+export const vids = ["https://www.dropbox.com/s/86er7xpywi0r0ra/lndrmt.mp4?raw=1",
               "https://www.dropbox.com/s/zqel8vtuvr80c9p/hrm7.mp4?raw=1",
               "https://www.dropbox.com/s/u5vgs6zh8nzmfad/jsmnwbbfktx1.mp4?raw=1",
               "https://www.dropbox.com/s/m532xyyzxpv4ymx/krlmntngnclgst.mp4?raw=1",
