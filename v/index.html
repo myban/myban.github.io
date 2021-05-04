@@ -16,7 +16,8 @@
     <video class="op-player__media" id="player" controls playsinline></video>
   </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/openplayerjs@latest/dist/openplayer.min.js"></script>
+  <script src="../videos/list.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/openplayerjs@latest/dist/openplayer.min.js"></script>
   <script>
             const urlParams = new URLSearchParams(window.location.search);
             i = urlParams.has("n") ? urlParams.get("n") : Math.floor(Math.random() * vids.length);
