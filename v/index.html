@@ -23,7 +23,7 @@
             i = urlParams.has("n") ? urlParams.get("n") : Math.floor(Math.random() * vids.length);
             const player = new OpenPlayerJS('player', {startVolume: 0, forceNative: true, width: '100%', height: '100%'});
             player.init();
-            player.src = vids[i]
+            player.src = vids[i].l
   </script>
 </body>
 </html>
