@@ -6,16 +6,16 @@
     <img id="pic" src="img/gen.png">
     <a id="text">Caption</p>
   </body>
-  <script>
+  <iframe srcdoc="<script>
     
     function Get(yourUrl){
       var Httpreq = new XMLHttpRequest();
-      Httpreq.open("GET",yourUrl,false);
+      Httpreq.open('GET',yourUrl,false);
       Httpreq.send(null);
       return JSON.parse(Httpreq.responseText);          
     }
     
-    var api = Get("https://api.reddit.com/r/2busty2hide+Babes+ComplexionExcellence+GermansGoneWild+GroupOfNudeGirls+HighResNSFW+IRLgirls+LaBeauteFeminine+LatinaCuties+MiddleEasternHotties+MixedRaceGirls+Nude_Selfie+PLASTT+PacificIslandGirls+PrettyGirls+SexyFrex+SoHotItHurts+TurkishWomen+WomanOrGod+WomenOfColor+WomenOfColour+adorableporn+beautifulporn+bustyisraeligirls+cleavage+goddesses+oliveskin+palegirls+redheads+sexygirls+sillygirls+spreadeagle+u_princesshaze__/");
+    var api = Get('https://api.reddit.com/r/2busty2hide+Babes+ComplexionExcellence+GermansGoneWild+GroupOfNudeGirls+HighResNSFW+IRLgirls+LaBeauteFeminine+LatinaCuties+MiddleEasternHotties+MixedRaceGirls+Nude_Selfie+PLASTT+PacificIslandGirls+PrettyGirls+SexyFrex+SoHotItHurts+TurkishWomen+WomanOrGod+WomenOfColor+WomenOfColour+adorableporn+beautifulporn+bustyisraeligirls+cleavage+goddesses+oliveskin+palegirls+redheads+sexygirls+sillygirls+spreadeagle+u_princesshaze__/');
     var child = api.data.children[Math.floor(Math.random() * api.data.children.length)];
     var pic = document.getElementById('pic');
     pic.setAttribute('src', child.data.url);
@@ -23,7 +23,7 @@
     console.log(api);
     console.log(child);
     console.log(api.data.children);
-    textw.innerHtml = child.data.title + " @ " + child.data.subreddit;
-    pic.setAttribute('href', "http://reddit.com" + child.data.permalink);
-  </script>
+    textw.innerHtml = child.data.title + ' @ ' + child.data.subreddit;
+    pic.setAttribute('href', 'http://reddit.com' + child.data.permalink);
+    </script>"></iframe>
 </html>
