@@ -12,5 +12,6 @@ const vids = [{"l":"https://www.dropbox.com/s/86er7xpywi0r0ra/lndrmt.mp4?raw=1",
               {"l":"https://www.dropbox.com/s/uoyd2ft01ghg6oe/fkdrvnscl5.mp4?raw=1","p":"red1"},
               {"l":"https://www.dropbox.com/s/6ya0spiegjudg6x/f89e110dbfdf3.mp4?raw=1","p":"itfmc"},
               {"l":"https://www.dropbox.com/s/29p12bhuhiz8xih/4815.mp4?raw=1","p":"haya"},
-              {"l":"https://www.dropbox.com/s/nxp4w7wnh6btjal/brtsclbt.mp4?raw=1","p":"beur"}
+              {"l":"https://www.dropbox.com/s/nxp4w7wnh6btjal/brtsclbt.mp4?raw=1","p":"beur"},
+              {"l":"https://www.dropbox.com/s/nnb95yz57c4lu4y/hstrltrsty.mp4?raw=1","p":"gen"}
              ];
