@@ -4,15 +4,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   </head>
   <body>
-    <div class="tile is-ancestor">
-      <div class="tile is-parent is-2">
-        <div class="tile is-child">
-          <a href="../v?n=0" class="is-light is-link">
-            <img src="img/blo1.png">
-            <p class="bd-notification is-primary has-text-centered">0</p>
-          </a>
-        </div>
-      </div>
+    <div class="tile is-ancestor" id="anc">
     </div>
+    <script src="../videos/list.js"></script>
+    <script>
+      
+      videos.forEach(createElement);
+      function createElement(item, index){
+        var htmlstr = `<div class="tile is-parent is-2">
+          <div class="tile is-child">
+            <a href="../v?n=${index}" class="is-light is-link">
+              <img src="img/${item.i}.png">
+              <p class="bd-notification is-primary has-text-centered">${index}</p>
+            </a>
+          </div>
+        </div>`;
+        var tile = document.getElementById("anc");
+        tile.insertAdjacentHtml('beforeEnd', htmlstr);
+      }
+    </script>
   </body>
 </html>
