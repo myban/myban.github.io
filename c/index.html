@@ -8,9 +8,10 @@
     </div>
     <script src="../videos/list.js"></script>
     <script>
-      
+      alert('lesgo');
       videos.forEach(createElement);
       function createElement(item, index){
+        alert(index);
         var htmlstr = `<div class="tile is-parent is-2">
           <div class="tile is-child">
             <a href="../v?n=${index}" class="is-light is-link">
