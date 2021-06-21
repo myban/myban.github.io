@@ -8,11 +8,10 @@
     </div>
     <script src="../videos/list.js"></script>
     <script>
-      alert('lesgo');
       vids.forEach(createElement);
+      var perRow = 6;
       function createElement(item, index){
-        alert(index);
-        var htmlstr = `<div class="tile is-parent is-2">
+        var htmlstr = `<div class="tile is-parent is-${12/perRow}">
           <div class="tile is-child">
             <a href="../v?n=${index}" class="is-light is-link">
               <img src="img/${item.p}.png">
@@ -20,8 +19,16 @@
             </a>
           </div>
         </div>`;
-        var tile = document.getElementById("anc");
-        tile.insertAdjacentHTML('beforeEnd', htmlstr);
+        if(index % perRow == 0){
+          var tile = document.getElementById("anc");
+          var parHtml = `<div class="tile is-parent is-${12/perRow}" id="par${index/perRow}">
+            ${htmlStr}
+          <div>`
+          tile.insertAdjacentHTML('beforeEnd', parHtml);
+        } else {
+          var par = document.getElementById("par" + index/perRow);
+          tile.insertAdjacentHTML('beforeEnd', htmlStr);
+        }
       }
     </script>
   </body>
