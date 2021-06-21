@@ -19,14 +19,15 @@
             </a>
           </div>
         </div>`;
+        var row = Math.floor(index/perRow);
         if(index % perRow == 0){
           var tile = document.getElementById("anc");
-          var parHtml = `<div class="tile is-parent is-${12/perRow}" id="par${index/perRow}">
+          var parHtml = `<div class="tile is-parent is-${12/perRow}" id="par${row}">
             ${htmlStr}
           <div>`
           tile.insertAdjacentHTML('beforeEnd', parHtml);
         } else {
-          var par = document.getElementById("par" + index/perRow);
+          var par = document.getElementById("par" + row);
           par.insertAdjacentHTML('beforeEnd', htmlStr);
         }
       }
