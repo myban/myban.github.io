@@ -11,7 +11,7 @@
       vids.forEach(createElement);
       function createElement(item, index){
         var perRow = 6;
-        var htmlStr = `<div class="tile is-child">
+        var htmlStr = `<div class="tile is-child is-${12/perRow}">
             <a href="../v?n=${index}" class="is-light is-link">
               <img src="img/${item.p}.png">
               <p class="bd-notification is-primary has-text-centered">${index}</p>
@@ -20,7 +20,7 @@
         var row = Math.floor(index/perRow);
         if(index % perRow == 0){
           var tile = document.getElementById("anc");
-          var parHtml = `<div class="tile is-parent is-${12/perRow}" id="par${row}">
+          var parHtml = `<div class="tile is-parent" id="par${row}">
             ${htmlStr}
           <div>`
           tile.insertAdjacentHTML('beforeEnd', parHtml);
