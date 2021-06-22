@@ -9,9 +9,9 @@
     <script src="../videos/list.js"></script>
     <script>
       vids.forEach(createElement);
-      var perRow = 6;
       function createElement(item, index){
-        var htmlstr = `<div class="tile is-parent is-${12/perRow}">
+        var perRow = 6;
+        var htmlStr = `<div class="tile is-parent is-${12/perRow}">
           <div class="tile is-child">
             <a href="../v?n=${index}" class="is-light is-link">
               <img src="img/${item.p}.png">
