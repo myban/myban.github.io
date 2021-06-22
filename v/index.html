@@ -15,7 +15,7 @@
   <div>
     <video class="op-player__media" id="player" controls playsinline></video>
   </div>
-  <a href="../m">mobile</a>
+  <a id="mlink" href="../m">mobile</a>
 
   <script src="../videos/list.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/openplayerjs@latest/dist/openplayer.min.js"></script>
@@ -25,6 +25,7 @@
             const player = new OpenPlayerJS('player', {startVolume: 0, forceNative: true, width: '100%', height: '100%'});
             player.init();
             player.src = vids[i].l
+            document.getElementById("mlink").href = "../m?n=${i}";
   </script>
 </body>
 </html>
