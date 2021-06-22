@@ -4,21 +4,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   </head>
   <body>
-    <div class="tile is-ancestor" id="anc">
+    <div class="tile is-ancestor is-vertical" id="anc">
     </div>
     <script src="../videos/list.js"></script>
     <script>
       vids.forEach(createElement);
       function createElement(item, index){
         var perRow = 6;
-        var htmlStr = `<div class="tile is-parent is-${12/perRow}">
-          <div class="tile is-child">
+        var htmlStr = `<div class="tile is-child">
             <a href="../v?n=${index}" class="is-light is-link">
               <img src="img/${item.p}.png">
               <p class="bd-notification is-primary has-text-centered">${index}</p>
             </a>
-          </div>
-        </div>`;
+          </div>`;
         var row = Math.floor(index/perRow);
         if(index % perRow == 0){
           var tile = document.getElementById("anc");
