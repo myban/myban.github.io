@@ -11,7 +11,7 @@
       cntn.forEach(createElement);
       function createElement(item, index){
         var perRow = 6;
-        var imgname = item.toSubstring(0,2).toLowerCase();
+        var imgname = item.substring(0,2).toLowerCase();
         var htmlStr = `<div class="tile is-child is-${12/perRow}">
             <a href="https://www.reddit.com/r/mybanw/?f=flair_name%3A%22${item}%22" class="is-light is-link">
               <img src="img/${imgname}.png">
